@@ -1,0 +1,44 @@
+/* Default (light) theme */
+:root {
+  --bg-color: #f8f9fa;
+  --text-color: #000000;
+  --border-color: #dee2e6;
+  --input-bg: #ffffff;
+  --input-text: #000000;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --border-color: #333333;
+  --input-bg: #1e1e1e;
+  --input-text: #ffffff;
+}
+
+/* Dracula theme */
+[data-theme="dracula"] {
+  --bg-color: #282a36;
+  --text-color: #f8f8f2;
+  --border-color: #44475a;
+  --input-bg: #44475a;
+  --input-text: #f8f8f2;
+}
+
+/* Night theme */
+[data-theme="night"] {
+  --bg-color: #1c1c1c;
+  --text-color: #ffffff;
+  --border-color: #333333;
+  --input-bg: #2a2a2a;
+  --input-text: #ffffff;
+}
+
+/* Black theme */
+[data-theme="black"] {
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --border-color: #222222;
+  --input-bg: #111111;
+  --input-text: #ffffff;
+}

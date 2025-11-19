@@ -1,0 +1,45 @@
+
+
+@import url('../node_modules/bootstrap/dist/css/bootstrap.min.css');
+
+*{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Add this in src/index.css */
+
+/* Light Theme */
+[data-theme="light"] .bg-primary { background-color: #0d6efd !important; }
+[data-theme="light"] .bg-secondary { background-color: #6c757d !important; }
+[data-theme="light"] .bg-info { background-color: #0dcaf0 !important; }
+[data-theme="light"] .bg-dark { background-color: #212529 !important; }
+
+/* Dark Theme */
+[data-theme="dark"] .bg-primary { background-color: #6610f2 !important; }
+[data-theme="dark"] .bg-secondary { background-color: #adb5bd !important; }
+[data-theme="dark"] .bg-info { background-color: #17a2b8 !important; }
+[data-theme="dark"] .bg-dark { background-color: #343a40 !important; }
+
+/* Cupcake */
+[data-theme="cupcake"] .bg-primary { background-color: #fbb6ce !important; }
+[data-theme="cupcake"] .bg-secondary { background-color: #fce7f3 !important; }
+[data-theme="cupcake"] .bg-info { background-color: #f9a8d4 !important; }
+[data-theme="cupcake"] .bg-dark { background-color: #9d174d !important; }
+
+/* Retro */
+[data-theme="retro"] .bg-primary { background-color: #fbc02d !important; }
+[data-theme="retro"] .bg-secondary { background-color: #ff8f00 !important; }
+[data-theme="retro"] .bg-info { background-color: #ffb300 !important; }
+[data-theme="retro"] .bg-dark { background-color: #6d4c41 !important; }
+
+/* Coffee */
+[data-theme="coffee"] .bg-primary { background-color: #6f4e37 !important; }
+[data-theme="coffee"] .bg-secondary { background-color: #a67b5b !important; }
+[data-theme="coffee"] .bg-info { background-color: #d7ccc8 !important; }
+[data-theme="coffee"] .bg-dark { background-color: #3e2723 !important; }
+
+/* Luxury */
+[data-theme="luxury"] .bg-primary { background-color: #2c2c54 !important; }
+[data-theme="luxury"] .bg-secondary { background-color: #474787 !important; }
+[data-theme="luxury"] .bg-info { background-color: #706fd3 !important; }
+[data-theme="luxury"] .bg-dark { background-color: #1e272e !important; }
