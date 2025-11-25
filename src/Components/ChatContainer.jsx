@@ -382,7 +382,7 @@ const ChatContainer = () => {
         <div ref={messagesEndRef} />
       </div>
 
-      <MessageInput />
+      <MessageInput/>
     </div>
   );
 };

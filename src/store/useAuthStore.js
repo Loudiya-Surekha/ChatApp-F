@@ -6,7 +6,8 @@ import { io } from "socket.io-client";
 
 
 
-const BASE_URL = "http://localhost:5001"
+// const BASE_URL = "http://localhost:5001"
+const BASE_URL = "https://chatapp-b-k6ft.onrender.com/api"
 
 export const useAuthStore = create((set,get) => ({
     authUser: null,
@@ -19,7 +20,12 @@ export const useAuthStore = create((set,get) => ({
 
     checkAuth: async () => {
         try {
-            const res = await axiosInstance.get("/auth/check");
+             const token = get().authUser?.token;
+            const res = await axiosInstance.get("/auth/check", {
+                 headers: {
+                Authorization: `Bearer ${token}`,
+            },
+            });
             set({ authUser: res.data });
             get().connectSocket();
         } catch (error) {
@@ -91,6 +97,7 @@ export const useAuthStore = create((set,get) => ({
 
         const newSocket = io(BASE_URL, {
             autoConnect: false,
+            transports: ["websocket"],
             query: {
                 userId: authUser._id,
             },
